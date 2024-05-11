@@ -1,0 +1,11 @@
+.custom-breadcrumb{
+    font-size: 15px;
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+    margin-left: 5px;
+    float: right;
+    padding-right: var(--bs-breadcrumb-item-padding-x);
+    color: var(--bs-breadcrumb-divider-color);
+    content: var(--bs-breadcrumb-divider, ">");
+}

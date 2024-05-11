@@ -1,0 +1,22 @@
+.login-form input[type=email], .login-form input[type=password]{
+    border: none;
+    border-radius: 0;
+    border-bottom: 2px solid #cecece;
+}
+
+#login-form h1{
+    font-size: 16px !important;
+}
+
+.login-form label{
+    font-size: 13px;
+}
+
+.login-form input[type=checkbox]{
+    position: absolute;
+    right: 16px;
+}
+
+.login-form  .checkbox-text{
+    margin-right: 22px;
+}

@@ -1,0 +1,88 @@
+@import "_top-nav.css";
+@import '_slider.css';
+@import '_category.css';
+@import '_special-offers.css';
+@import '_owl-special-offers.css';
+@import '_owl-product-mobile.css';
+@import '_owl-product-laptop.css';
+@import '_owl-product-headphone.css';
+@import '_owl-product-smartwatch.css';
+@import '_owl-logo-brands.css';
+@import '_services.css';
+@import '_footer.css';
+@import '_login-form.css';
+@import '_breadcrumb.css';
+@import '_detials-product.css';
+
+@font-face {
+  font-family: Vazir-Medium;
+  src: url(../fonts/Vazir-Medium.eot) format("eot"),
+    url(../fonts/Vazir-Medium.woff) format("woff"),
+    url(../fonts/Vazir-Medium.woff2) format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+*,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Vazir-Medium;
+}
+
+body {
+  direction: rtl !important;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul, ol, li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.owl-carousel .owl-nav {
+  position: absolute;
+  width: 100%;
+  top: 110px;
+  display: flex;
+  font-size: 35px !important;}
+
+.owl-carousel .owl-nav .owl-next{
+  position: absolute;
+  left: 0;
+}
+
+.owl-carousel-logo-brand .owl-nav .owl-next, .owl-carousel-logo-brand .owl-nav .owl-prev{
+  position: absolute;
+    top: -74px !important;
+}
+
+#scroll-to-top{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  color: white;
+  background-color: rgb(2, 2, 91);
+  width: 50px;
+  height: 50px;
+  display: none;
+  border-radius: 35px;
+  transition: all .3s linear;
+}
+
+#scroll-to-top i{
+  position: relative;
+  right: 15px;
+  top: 10px;
+  font-size: 20px;
+  transition: all .3s linear;
+}
+
+#scroll-to-top i:hover{
+  top: 7px;
+}

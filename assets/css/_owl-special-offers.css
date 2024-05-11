@@ -1,0 +1,20 @@
+.img-owl-special-offers{
+    width: 120px;
+    margin-top: 35px;
+}
+
+.img-product-special-offers{
+    max-width: 110px;
+}
+
+.product-price{
+    font-size: 13px !important;
+}
+
+.countdownt-timer{
+    background-color: white;
+    color: black;
+    border: none;
+    border-bottom: 2px solid red;
+    font-size: 13px;
+}

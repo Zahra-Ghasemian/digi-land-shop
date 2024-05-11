@@ -1,0 +1,912 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>digi land</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.rtl.min.css" integrity="sha384-nU14brUcp6StFntEOOEBvcJm4huWjB0OcIeQ3fltAfSmuZFrkAif0T+UtNGlKKQv" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="assets/css/owl.carousel.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.default.css">
+    <link rel="stylesheet" href="assets/css/jquery.countdownTimer.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body dir="rtl">
+    <!-- -- start navbar -- -->
+    <div class="container-fluid sticky-top bg-top-nav">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 d-flex justify-content-center align-items-center festival">
+                        <img class="img-top-nav-festival" src="assets/img/yalda.png" alt="">
+                        <span class="text-white text-top-nav-festival">شبی به بلندی آرزو ها</span>
+                    </div>
+                </div>
+            </div>
+            <div class="container my-2">
+                <div class="row">
+                    <div class="col-sm-12 col-md-3"><p class="text-white text-logo">Digi Land</p></div>
+                    <div class="col-sm-12 col-md-6">
+                        <div class="input-group mb-3">
+                            <!-- <button class="btn btn-secondary dropdown-toggle rounded-end btn-input-saerch" type="button" data-bs-toggle="dropdown">دسته بندی کالا ها</button>
+                            <ul class="dropdown-menu input-saerch-dropdown">
+                                <li><a class="dropdown-item d-flex justify-content-start" href="#">موبایل</a></li>
+                                <li><a class="dropdown-item d-flex justify-content-start" href="#">لپ تاپ</a></li>
+                                <li><a class="dropdown-item d-flex justify-content-start" href="#">کالای دیجیتال</a></li>
+                            </ul> -->
+                            <input type="text" class="form-control input-search-top-nav rounded-2" aria-label="Text input with dropdown button" placeholder="جست و جو ....">
+                            <button class="btn rounded-start text-white btn-top-nav-search btn-input-saerch" type="button" id="button-addon1">جست و جو</button>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-3 d-flex justify-content-end">
+                        <div class="dropdown">
+                            <button class="btn btn-link dropdown-toggle border-0 text-decoration-none text-white shop-card shop-card-dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <!-- <span>سبد خرید</span> -->
+                                <span class="material-symbols-outlined shop-card-icon">add_shopping_cart</span>
+                            </button>
+                            <ul class="dropdown-menu basket">
+                                <li>
+                                    <a class="dropdown-item basket-dropdown-item p-1 d-flex justify-content-around" href="#">
+                                        <img class="img-thumbnail" src="assets/img/product-headphone/HAYLOU W1.jpg" alt=""/>
+                                        <ul>
+                                            <li>هدفون بلوتوثی HAYLOU</li>
+                                            <li>مدل W1</li>
+                                            <li>1280000 تومان</li>
+                                        </ul>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item basket-dropdown-item p-1 d-flex justify-content-around" href="#">
+                                        <img class="img-thumbnail" src="assets/img/product-mobile/SAMSUNG A54.png" alt=""/>
+                                        <ul>
+                                            <li>گوشی موبایل سامسونگ</li>
+                                            <li>Galaxy A54 5G</li>
+                                            <li>14849000 تومان</li>
+                                        </ul>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item basket-dropdown-item p-1 d-flex justify-content-around" href="#">
+                                        <img class="img-thumbnail" src="assets/img/product-smart watch/smart watch.jpg" alt=""/>
+                                        <ul>
+                                            <li>ساعت هوشمند سامسونگ</li>
+                                            <li>مدل Galaxy Watch5 44mm</li>
+                                            <li>7499000 تومان</li>
+                                        </ul>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <nav class="position-relative">
+                <div class="container">
+                    <div class="row">
+                        <nav class="navbar navbar-expand-lg navbar-dark d-flex justify-content-center">
+                            <div class="container">
+                                <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+                                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                                </button>
+                                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav mx-auto mb-2 mb-lg-0 custom-navbar-nav">
+                                    <li class="nav-item">
+                                    <a class="nav-link active text-white" aria-current="page" href="#">خانه</a>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        لپ تاپ
+                                    </a>
+                                    <ul class="dropdown-menu w-100 border-0 shadow dropdown-mega-menu mr-auto">
+                                    <div class="cotainer">
+                                        <div class="row">
+                                            <div class="col-sm-12 col-md-4">
+                                                <span class="d-flex justify-content-start titr">برند لپ تاپ</span>
+                                                <ul>
+                                                    <li>
+                                                        <a class="dropdown-item d-flex justify-content-start" href="#"><span class="material-symbols-outlined">chevron_left</span>ایسوس (Asus)</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item d-flex justify-content-start" href="#"><span class="material-symbols-outlined">chevron_left</span>ایسر (Acer)</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item d-flex justify-content-start" href="#"><span class="material-symbols-outlined">chevron_left</span>اپل (Apple)</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item d-flex justify-content-start" href="#"><span class="material-symbols-outlined">chevron_left</span>لنوو (Lenovo)</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item d-flex justify-content-start" href="#"><span class="material-symbols-outlined">chevron_left</span>اچ پی (HP)</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-sm-12 col-md-4">
+                                                <span class="d-flex justify-content-start titr">لوازم جانبی لپ تاپ</span>
+                                                <ul>
+                                                    <li>
+                                                        <a class="dropdown-item d-flex justify-content-start" href="#"><span class="material-symbols-outlined">chevron_left</span>شاژر لپ تاپ</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item d-flex justify-content-start" href="#"><span class="material-symbols-outlined">chevron_left</span>کیف لپ تاپ</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item d-flex justify-content-start" href="#"><span class="material-symbols-outlined">chevron_left</span>کول پد</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item d-flex justify-content-start" href="#"><span class="material-symbols-outlined">chevron_left</span>استیکر لپ تاپ</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-sm-12 col-md-4 d-flex justify-content-end"><img class="d-none d-md-block" src="assets/img/group product/lap top groups.jpg" alt=""></div>
+                                        </div>
+                                    </div>
+                                    </ul>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        موبایل
+                                    </a>
+                                    <ul class="dropdown-menu w-100 border-0 shadow dropdown-mega-menu">
+                                    <div class="cotainer">
+                                        <div class="row">
+                                            <div class="col-sm-12 col-md-4">
+                                                <span class="d-flex justify-content-start titr">برند موبایل</span>
+                                                <ul>
+                                                    <li>
+                                                        <a class="dropdown-item d-flex justify-content-start" href="#"><span class="material-symbols-outlined">chevron_left</span>اپل (Apple)</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item d-flex justify-content-start" href="#"><span class="material-symbols-outlined">chevron_left</span>سامسونگ (Samsung)</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item d-flex justify-content-start" href="#"><span class="material-symbols-outlined">chevron_left</span>شیائومی (Xiaomi)</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-sm-12 col-md-4">
+                                                <span class="d-flex justify-content-start titr">لوازم جانبی موبایل</span>
+                                                <ul>
+                                                    <li>
+                                                        <a class="dropdown-item d-flex justify-content-start" href="#"><span class="material-symbols-outlined">chevron_left</span>شاژر گوشی</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item d-flex justify-content-start" href="#"><span class="material-symbols-outlined">chevron_left</span>قاب و کاور گوشی</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item d-flex justify-content-start" href="#"><span class="material-symbols-outlined">chevron_left</span>گلس گوشی</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item d-flex justify-content-start" href="#"><span class="material-symbols-outlined">chevron_left</span>کابل شارژر و مبدل</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-sm-12 col-md-4 d-flex justify-content-end"><img class="d-none d-md-block" src="assets/img/group product/mobile group.jpg" alt=""></div>
+                                        </div>
+                                    </div>
+                                    </ul>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        کالای دیجیتال
+                                    </a>
+                                    <ul class="dropdown-menu w-100 border-0 shadow dropdown-mega-menu">
+                                    <div class="cotainer">
+                                        <div class="row">
+                                            <div class="col-sm-12 col-md-4">
+                                                <span class="d-flex justify-content-start titr">هدفون</span>
+                                                <ul>
+                                                    <li>
+                                                        <a class="dropdown-item d-flex justify-content-start" href="#"><span class="material-symbols-outlined">chevron_left</span>هدفون اپل (ایرپاد)</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item d-flex justify-content-start" href="#"><span class="material-symbols-outlined">chevron_left</span>هدفون سامسونگ (ایرپادز)</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item d-flex justify-content-start" href="#"><span class="material-symbols-outlined">chevron_left</span>هدفون شیائومی</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-sm-12 col-md-4">
+                                                <span class="d-flex justify-content-start titr">ساعت و بند هوشمند</span>
+                                                <ul>
+                                                    <li>
+                                                        <a class="dropdown-item d-flex justify-content-start" href="#"><span class="material-symbols-outlined">chevron_left</span>ساعت هوشمند سامسونگ</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item d-flex justify-content-start" href="#"><span class="material-symbols-outlined">chevron_left</span>ساعت هوشمند شیائومی</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item d-flex justify-content-start" href="#"><span class="material-symbols-outlined">chevron_left</span>اپل واچ</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item d-flex justify-content-start" href="#"><span class="material-symbols-outlined">chevron_left</span>بند اپل واچ</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item d-flex justify-content-start" href="#"><span class="material-symbols-outlined">chevron_left</span>بند ساعت هوشمند</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-sm-12 col-md-4 d-flex justify-content-end"><img class="d-none d-md-block" src="assets/img/group product/digitals.jpg" alt=""></div>
+                                        </div>
+                                    </div>
+                                    </ul>
+                                    </li>
+                                    <li class="nav-item">
+                                    <a class="nav-link text-white" href="#">درباره ما</a>
+                                    </li>
+                                    <li class="nav-item">
+                                    <a class="nav-link text-white" href="#">تماس با ما</a>
+                                    </li>
+                                    <!-- <li class="nav-item">
+                                    <a class="nav-link text-warning" href="#">تخفیفات ویژه</a>
+                                    </li> -->
+                                </ul>
+                                </div>
+                            </div>
+                            <a href="#login-form" class="icon-login text-warning h4" data-bs-toggle="modal"><i class="bi bi-person"></i></a>
+                        </nav>
+                    </div>
+                </div>
+            </nav>
+    </div>
+    <!-- start login form -->
+    <div class="modal fade" id="login-form" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5 text-center w-100" id="exampleModalLabel">ورود به سایت</h1>
+                <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" style="left: 0 !important; position: absolute;"></button> -->
+            </div>
+            <div class="modal-body">
+                <form method="" class="login-form">
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">ایمیل</label>
+                        <input type="email" class="form-control form-control-sm" id="exampleInputEmail1">
+                        <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> -->
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">کلمه عبور</label>
+                        <input type="password" class="form-control form-control-sm" id="exampleInputPassword1">
+                    </div>
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label checkbox-text" for="exampleCheck1">مرا به خاطر بسپار</label>
+                    </div>
+                    <button type="submit" class="btn btn-success btn-sm w-100 mt-3">ورود</button>
+                </form>
+            </div>
+            <div class="modal-footer">
+            </div>
+            </div>
+        </div>
+    </div>
+    <!-- end login form -->
+    <!-- -- end navbar -- -->
+    <!-- -- start slider -- -->
+    <div class="container mt-3">
+        <div class="row">
+            <div class="col-sm-12">
+                <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                    <img src="assets/img/slider/slider mobile2.png" class="d-block w-100 img-slider" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                    <img src="assets/img/slider/slider winter.jpg" class="d-block w-100 img-slider" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                    <img src="assets/img/slider/slider yalda1.jpg" class="d-block w-100 img-slider" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- -- end slider -- -->
+    <!-- -- start owl special offers -- -->
+    <section class="container mt-4 bg-danger rounded-4">
+        <div class="row">
+            <div class="col-sm-2">
+                <div class="text-white text-center h2 mt-5">پیشنهاد</div>
+                <div class="text-white text-center h2">شگفت انگیز</div>
+                <div class="d-flex justify-content-center">
+                    <img class="img-owl-special-offers d-none d-md-block" src="assets/img/takhfif.png" alt="">
+                </div>
+            </div>
+            <div class="col-sm-10 my-3">
+                <div class="owl-carousel owl-theme position-relative">
+                    <a href="#">
+                        <div class="card">
+                            <img src="assets/img/product-mobile/soffer-Galaxy S23 Ultra.png" class="card-img-top mt-3 img-product-special-offers align-self-center mt-3" alt="...">
+                            <div class="card-body text-center">
+                                <!-- <h5 class="card-title owl-product-title">سامسونگ Galaxy S23 Ultra</h5> -->
+                                <p class="card-text"><s class="text-secondary product-price">61199000 تومان</s><p class="product-price">58799000 تومان <span class="badge rounded-pill text-bg-danger mr-2">4%</span></p></p>
+                                <div id="countdowntimer"><span class="countdownt-timer" id="future_date"><span></div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="card">
+                            <img src="assets/img/product-mobile/soffer-Galaxy A24 4G.png" class="card-img-top mt-3 img-product-special-offers align-self-center mt-3" alt="...">
+                            <div class="card-body text-center">
+                                <!-- <h5 class="card-title owl-product-title">سامسونگ Galaxy A24 4G</h5> -->
+                                <p class="card-text"><s class="text-secondary product-price">7555000 تومان</s><p class="product-price">7399000 تومان <span class="badge rounded-pill text-bg-danger mr-2">2%</span></p></p>
+                                <div id="countdowntimer"><span class="countdownt-timer" id="future_date"><span></div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="card">
+                            <img src="assets/img/product-lap top/soffer-lap top lenovo ideapad slim 3.png" class="card-img-top mt-3 img-product-special-offers align-self-center" alt="...">
+                            <div class="card-body text-center">
+                                <!-- <h5 class="card-title owl-product-title">لپ تاپ 15.6 اینچی لنوو مدل IdeaPad Slim 3</h5> -->
+                                <p class="card-text"><s class="text-secondary product-price">23699000 تومان</s><p class="product-price">21129000 تومان <span class="badge rounded-pill text-bg-danger mr-2">11%</span></p></p>
+                                <div id="countdowntimer"><span class="countdownt-timer" id="future_date"><span></div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="card">
+                            <img src="assets/img/product-lap top/soffer-lap top asus M433UA-EB406.png" class="card-img-top mt-3 img-product-special-offers align-self-center" alt="...">
+                            <div class="card-body text-center">
+                                <!-- <h5 class="card-title owl-product-title">لپ تاپ 14 اینچی ایسوس مدل M433UA-EB406</h5> -->
+                                <p class="card-text"><s class="text-secondary product-price">38500000 تومان</s><p class="product-price">29900000 تومان <span class="badge rounded-pill text-bg-danger mr-2">22%</span></p></p>
+                                <div id="countdowntimer"><span class="countdownt-timer" id="future_date"><span></div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="card">
+                            <img src="assets/img/product-lap top/soffer-lap top asus M433UA-EB406.png" class="card-img-top mt-3 img-product-special-offers align-self-center" alt="...">
+                            <div class="card-body text-center">
+                                <!-- <h5 class="card-title owl-product-title">هدفون بلوتوثی اپل مدل AirPods Pro 2nd Generation</h5> -->
+                                <p class="card-text"><s class="text-secondary product-price">10900000 تومان</s><p class="product-price">10190000 تومان <span class="badge rounded-pill text-bg-danger mr-2">7%</span></p></p>
+                                <div id="countdowntimer"><span class="countdownt-timer" id="future_date"><span></div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="card">
+                            <img src="assets/img/product-headphone/هدست بی سیم بلکین مدل AUD002btBK.jpg" class="card-img-top mt-3 img-product-special-offers align-self-center" alt="...">
+                            <div class="card-body text-center">
+                                <!-- <h5 class="card-title owl-product-title">هدست بی سیم بلکین مدل AUD002btBK</h5> -->
+                                <p class="card-text"><s class="text-secondary product-price">2137000 تومان</s><p class="product-price">1923300 تومان <span class="badge rounded-pill text-bg-danger mr-2">10%</span></p></p>
+                                <div id="countdowntimer"><span class="countdownt-timer" id="future_date"><span></div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="card">
+                            <img src="assets/img/product-smart watch/ساعت هوشمند سامسونگ مدل Galaxy Watch6 Classic 47mm.jpg" class="card-img-top mt-3 img-product-special-offers align-self-center" alt="...">
+                            <div class="card-body text-center">
+                                <!-- <h5 class="card-title owl-product-title">ساعت هوشمند سامسونگ مدل Galaxy Watch6 Classic 47mm</h5> -->
+                                <p class="card-text"><s class="text-secondary product-price">13100000 تومان</s><p class="product-price">12499000 تومان <span class="badge rounded-pill text-bg-danger mr-2">5%</span></p></p>
+                                <div id="countdowntimer"><span class="countdownt-timer" id="future_date"><span></div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="card">
+                            <img src="assets/img/product-smart watch/ساعت هوشمند اپل مدل Ultra 2 Titanium Case Trail Loop 49mm.jpg" class="card-img-top mt-3 img-product-special-offers align-self-center" alt="...">
+                            <div class="card-body text-center">
+                                <!-- <h5 class="card-title owl-product-title">ساعت هوشمند اپل مدل Ultra 2 Titanium Case Trail Loop 49mm</h5> -->
+                                <p class="card-text"><s class="text-secondary product-price">43100000 تومان</s><p class=" product-price">41899000 تومان <span class="badge rounded-pill text-bg-danger mr-2">3%</span></p></p>
+                                <div id="countdowntimer"><span class="countdownt-timer" id="future_date"><span></div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- -- end special offers -- -->
+    <!-- -- start category -- --> 
+    <section class="container">
+        <div class="row mt-5"><h4 class="d-flex justify-content-center">خرید بر اساس دسته بندی</h4></div>
+        <div class="row d-flex justify-content-center mt-5">
+            <div class="col-sm-12 col-md-3 col-lg-2 mb-4 d-flex justify-content-center">
+                <a href="#" class="category">
+                    <div class="rounded-circle"><img class="img-fluid" src="assets/img/category products/category laptop.png" alt=""></div>
+                    <p>لپ تاپ</p>
+                </a>
+                </div>
+                <div class="col-sm-12 col-md-3 col-lg-2 mb-4 d-flex justify-content-center">
+                    <a href="#" class="category">
+                        <div class="rounded-circle"><img class="img-fluid" src="assets/img/category products/category mobilejpg.png" alt=""></div>
+                        <p>موبایل</p>
+                    </a>
+                </div>
+                <div class="col-sm-12 col-md-3 col-lg-2 mb-4 d-flex justify-content-center">
+                    <a href="#" class="category">
+                        <div class="rounded-circle"><img class="img-fluid" src="assets/img/category products/category smart watch.png" alt=""></div>
+                        <p>ساعت هوشمند</p>
+                    </a>
+                </div>
+                <div class="col-sm-12 col-md-3 col-lg-2 mb-4 d-flex justify-content-center">
+                    <a href="#" class="category">
+                        <div class="rounded-circle"><img class="img-fluid" src="assets/img/category products/category headphone.png" alt=""></div>
+                        <p>هدفون</p>
+                    </a>
+                </div>
+            </div>
+    </section>
+    <!-- -- end category -- -->
+    <!-- -- start ads mobile -- -->
+    <section class="container mt-4">
+        <div class="row">
+            <div class="col-sm-12 col-md-4 mt-3 d-flex justify-content-center">
+                <img class="img-fluid rounded-4" src="assets/img/ads/ads mobile1.jpeg" alt="" style="height: 290px;">
+            </div>
+            <div class="col-sm-12 col-md-4 mt-3 d-flex justify-content-center">
+                <img class="img-fluid rounded-4" src="assets/img/ads/ads mobile10.jpg" alt="" style="height: 290px;">
+            </div>
+            <div class="col-sm-12 col-md-4 mt-3 d-flex justify-content-center">
+                <img class="img-fluid rounded-4" src="assets/img/ads/ads mobile8.jpg" alt="" style="height: 290px;">
+            </div>
+        </div>
+    </section>
+    <!-- -- end ads mobile -- -->
+    <!-- -- start owl product mobile -- -->
+    <section class="container mt-5 shadow rounded-4">
+        <div class="row">
+            <span class="owl-mobile-title">موبایل</span>
+            <div class="col-sm-12">
+                <div class="owl-carousel owl-theme mt-3 owl-carousel-product">
+                    <a href="#">
+                        <div>
+                            <div class="card border-0">
+                                <img src="assets/img/product-mobile/soffer-Galaxy S23 Ultra.png" class="card-img-top align-self-center owl-img-product" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        <h5 class="text-center product-title">سامسونگ Galaxy S23 Ultra</h5>
+                                        <p class="text-center"><s class="text-secondary product-price">61199000 تومان</s><p class="text-center product-price">58799000 تومان <span class="badge rounded-pill text-bg-danger mr-2">4%</span></p></p>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div>
+                            <div class="card border-0">
+                                <img src="assets/img/product-mobile/Redmi Note 12 4G.jpg" class="card-img-top align-self-center owl-img-product" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        <h5 class="text-center product-title">شیائومی مدل Redmi Note 12 4G</h5>
+                                        <p class="text-center product-price">7209000 تومان</p>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div>
+                            <div class="card border-0">
+                                <img src="assets/img/product-mobile/soffer-Galaxy A24 4G.png" class="card-img-top align-self-center owl-img-product" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        <h5 class="text-center product-title">سامسونگ Galaxy A24 4G</h5>
+                                        <p class="text-center"><s class="text-secondary product-price">7555000 تومان</s><p class="text-center product-price">7399000 تومان <span class="badge rounded-pill text-bg-danger mr-2">2%</span></p></p>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div>
+                            <div class="card border-0">
+                                <img src="assets/img/product-mobile/SAMSUNG A54.png" class="card-img-top align-self-center owl-img-product" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        <h5 class="text-center product-title">سامسونگ مدل Galaxy A54 5G</h5>
+                                        <p class="text-center product-price">14849000 تومان</p>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div>
+                            <div class="card border-0">
+                                <img src="assets/img/product-mobile/samsung galaxy A34 5G.jpg" class="card-img-top align-self-center owl-img-product" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        <h5 class="text-center product-title">سامسونگ مدل Galaxy A34 5G</h5>
+                                        <p class="text-center product-price">11199000 تومان</p>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- -- end owl product mobile -- -->
+    <!-- -- start ads lap top -- -->
+    <section class="container mt-5">
+        <div class="row">
+            <div class="col-sm-12">
+                <img class="img-fluid rounded-3" src="assets/img/ads/ads lap top2.jpg" alt="" style="height: 290px;">
+            </div>
+            </div>
+        </div>
+    </section>
+    <!-- -- end ads lap top -- -->
+    <!-- -- start owl product lap top -- -->
+    <section class="container mt-5 shadow rounded-4">
+        <div class="row">
+            <span class="owl-laptop-title">لپ تاپ</span>
+            <div class="col-sm-12">
+                <div class="owl-carousel owl-theme mt-3 owl-carousel-product">
+                    <a href="#">
+                        <div>
+                            <div class="card border-0">
+                                <img src="assets/img/product-lap top/soffer-lap top asus M433UA-EB406.png" class="card-img-top align-self-center owl-img-product" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        <h5 class="text-center product-title">لپ تاپ 14 اینچی ایسوس مدل M433UA-EB406</h5>
+                                        <p class="text-center"><s class="text-secondary product-price">38500000 تومان</s><p class="text-center product-price">29900000 تومان <span class="badge rounded-pill text-bg-danger mr-2">22%</span></p></p>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div>
+                            <div class="card border-0">
+                                <img src="assets/img/product-lap top/لنوو مدل IdeaPad 5-I5 8GB 1TB128GB MX450.jpg" class="card-img-top align-self-center owl-img-product" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        <h5 class="text-center product-title">لنوو مدل IdeaPad 5-I5 8GB 1TB128GB MX450</h5>
+                                        <p class="text-center product-price">24099000 تومان</p>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div>
+                            <div class="card border-0">
+                                <img src="assets/img/product-lap top/soffer-lap top lenovo ideapad slim 3.png" class="card-img-top align-self-center owl-img-product" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        <h5 class="text-center product-title">لپ تاپ 15.6 اینچی لنوو مدل IdeaPad Slim 3</h5>
+                                        <p class="text-center"><s class="text-secondary product-price">23699000 تومان</s><p class="text-center product-price">21129000 تومان <span class="badge rounded-pill text-bg-danger mr-2">11%</span></p></p>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div>
+                            <div class="card border-0">
+                                <img src="assets/img/product-lap top/اچ‌پی مدل Victus 15 FA1093DX-i5 16GB 512SSD RTX3050.jpg" class="card-img-top align-self-center owl-img-product" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        <h5 class="text-center product-title">اچ‌پی مدل Victus 15 FA1093DX-i5 16GB 512SSD RTX3050</h5>
+                                        <p class="text-center product-price">36300000 تومان</p>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div>
+                            <div class="card border-0">
+                                <img src="assets/img/product-lap top/ایسوس مدل Vivobook R565EP-EJ628-i7 8GB 512SSD MX330.jpg" class="card-img-top align-self-center owl-img-product" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        <h5 class="text-center product-title">ایسوس مدل Vivobook R565EP-EJ628-i7 8GB 512SSD MX330</h5>
+                                        <p class="text-center product-price">30970000 تومان</p>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- -- end owl product lap top -- -->
+    <!-- -- start owl product headphone -- -->
+    <section class="container mt-5 shadow rounded-4">
+        <div class="row">
+            <span class="owl-headphone-title">هدفون و هندزفری</span>
+            <div class="col-sm-12">
+                <div class="owl-carousel owl-theme mt-3 owl-carousel-product">
+                    <a href="#">
+                        <div>
+                            <div class="card border-0">
+                                <img src="assets/img/product-headphone/هدفون بلوتوثی اپل مدل AirPods Pro 2nd Generation.jpg" class="card-img-top align-self-center img-product-headphone" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        <h5 class="text-center product-title">هدفون بلوتوثی اپل مدل AirPods Pro 2nd Generation</h5>
+                                        <p class="text-center"><s class="text-secondary product-price">1090000 تومان</s><p class="text-center product-price">10190000 تومان <span class="badge rounded-pill text-bg-danger mr-2">7%</span></p></p>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div>
+                            <div class="card border-0">
+                                <img src="assets/img/product-headphone/هدفون بلوتوثی سامسونگ مدل Galaxy Buds2 Pro.jpg" class="card-img-top align-self-center img-product-headphone" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        <h5 class="text-center product-title">headphone</h5>
+                                        <p class="text-center product-price">5090000 تومان</p>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div>
+                            <div class="card border-0">
+                                <img src="assets/img/product-headphone/هدست بی سیم بلکین مدل AUD002btBK.jpg" class="card-img-top align-self-center img-product-headphone" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        <h5 class="text-center product-title">هدست بی سیم بلکین مدل AUD002btBK</h5>
+                                        <p class="text-center"><s class="text-secondary product-price">2137000 تومان</s><p class="text-center product-price">1923300 تومان <span class="badge rounded-pill text-bg-danger mr-2">10%</span></p></p>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div>
+                            <div class="card border-0">
+                                <img src="assets/img/product-headphone/هدفون بی سیم سونی مدل WH-1000XM4.jpg" class="card-img-top align-self-center img-product-headphone" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        <h5 class="text-center product-title">هدفون بی سیم سونی مدل WH-1000XM4</h5>
+                                        <p class="text-center product-price">14076870 تومان</p>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div>
+                            <div class="card border-0">
+                                <img src="assets/img/product-headphone/HAYLOU W1.jpg" class="card-img-top align-self-center img-product-headphone" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        <h5 class="text-center product-title">هدفون بلوتوثی هایلو مدل W1</h5>
+                                        <p class="text-center product-price">1280000 تومان</p>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- -- end owl product headphone -- -->
+    <!-- -- start ads smart watch -- -->
+    <section class="container mt-5">
+        <div class="row">
+            <div class="col-sm-12 col-md-4 mt-3 d-flex justify-content-center">
+                <img class="img-fluid rounded-4" src="assets/img/ads/ads smart watch2.jpeg" alt="" style="height: 250px;">
+            </div>
+            <div class="col-sm-12 col-md-4 mt-3 d-flex justify-content-center">
+                <img class="img-fluid rounded-4" src="assets/img/ads/ads smart watch1.jpg" alt="" style="height: 250px;">
+            </div>
+            <div class="col-sm-12 col-md-4 mt-3 d-flex justify-content-center">
+                <img class="img-fluid rounded-4" src="assets/img/ads/ads smart watch3.jpg" alt="" style="height: 250px;">
+            </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- -- end ads smart watch -- -->
+    <!-- -- start owl product smart watch -- -->
+    <section class="container mt-5 shadow rounded-4">
+        <div class="row">
+            <span class="owl-smartwatch-title">ساعت هوشمند</span>
+            <div class="col-sm-12">
+                <div class="owl-carousel owl-theme mt-3 owl-carousel-product">
+                    <a href="#">
+                        <div>
+                            <div class="card border-0">
+                                <img src="assets/img/product-smart watch/ساعت هوشمند سامسونگ مدل Galaxy Watch6 Classic 47mm.jpg" class="card-img-top align-self-center img-product-smartwatch" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        <h5 class="text-center product-title">ساعت هوشمند سامسونگ مدل Galaxy Watch6 Classic 47mm</h5>
+                                        <p class="text-center"><s class="text-secondary product-price">13100000 تومان</s><p class="text-center product-price">12499000 تومان <span class="badge rounded-pill text-bg-danger mr-2">5%</span></p></p>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div>
+                            <div class="card border-0">
+                                <img src="assets/img/product-smart watch/smart watch.jpg" class="card-img-top align-self-center img-product-smartwatch" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        <h5 class="text-center product-title">ساعت هوشمند سامسونگ مدل Galaxy Watch5 44mm</h5>
+                                        <p class="text-center product-price">7499000 تومان</p>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div>
+                            <div class="card border-0">
+                                <img src="assets/img/product-smart watch/ساعت هوشمند اپل مدل Ultra 2 Titanium Case Trail Loop 49mm.jpg" class="card-img-top align-self-center img-product-smartwatch" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        <h5 class="text-center product-title">ساعت هوشمند اپل مدل Ultra 2 Titanium Case Trail Loop 49mm</h5>
+                                        <p class="text-center"><s class="text-secondary product-price">43100000 تومان</s><p class="text-center product-price">41899000 تومان <span class="badge rounded-pill text-bg-danger mr-2">3%</span></p></p>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div>
+                            <div class="card border-0">
+                                <img src="assets/img/product-smart watch/ساعت هوشمند اپل مدل SE 2022 Aluminum Case 44mm.jpg" class="card-img-top align-self-center img-product-smartwatch" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        <h5 class="text-center product-title">ساعت هوشمند اپل مدل SE 2022 Aluminum Case 44mm</h5>
+                                        <p class="text-center product-price">12240000 تومان</p>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div>
+                            <div class="card border-0">
+                                <img src="assets/img/product-smart watch/ساعت هوشمند سامسونگ مدل Galaxy Watch4 40mm بند سیلیکونی.jpg" class="card-img-top align-self-center img-product-smartwatch" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        <h5 class="text-center product-title">ساعت هوشمند سامسونگ مدل Galaxy Watch4 40mm بند سیلیکونی</h5>
+                                        <p class="text-center product-price">5500000 تومان</p>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- -- end owl product smart watch -- -->
+    <!-- -- start owl brands -- -->
+    <section class="container mt-5 shadow rounded-4">
+        <div class="row">
+            <span class="owl-smartwatch-title">برند های معتبر</span>
+            <div class="col-sm-12">
+                <div class="owl-carousel owl-theme mt-3 owl-carousel-product owl-carousel-logo-brand">
+                    <a href="#">
+                        <div>
+                            <div class="card border-0">
+                                <img src="assets/img/brand/logo apple.png" class="card-img-top align-self-center img-logo-brands" alt="...">
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div>
+                            <div class="card border-0">
+                                <img src="assets/img/brand/logo samsung.jpg" class="card-img-top align-self-center mt-3 img-logo-brands" alt="...">
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div>
+                            <div class="card border-0">
+                                <img src="assets/img/brand/logo xiaomi.png" class="card-img-top align-self-center mt-5 img-logo-brands" alt="...">
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div>
+                            <div class="card border-0">
+                                <img src="assets/img/brand/logo huawei.png" class="card-img-top align-self-center img-logo-brands" alt="...">
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div>
+                            <div class="card border-0">
+                                <img src="assets/img/brand/logo lenovo.png" class="card-img-top align-self-center mt-5 img-logo-brands" alt="...">
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div>
+                            <div class="card border-0">
+                                <img src="assets/img/brand/logo asus.jpg" class="card-img-top align-self-center mt-5 img-logo-brands" alt="...">
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div>
+                            <div class="card border-0">
+                                <img src="assets/img/brand/logo hp.png" class="card-img-top align-self-center mt-5 img-logo-brands" alt="...">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- -- end owl brand -- -->
+    <!-- start sevices -->
+    <section class="container mt-5 shadow rounded-4">
+        <div class="row">
+            <div class="col-sm-3 d-flex align-items-center flex-column">
+                <img src="assets/img/services/service 1.jpg" alt="">
+                <p class="text-secondary services-text">ارسال سریع</p>
+            </div>
+            <div class="col-sm-3 d-flex align-items-center flex-column">
+                <img src="assets/img/services/service 2.jpg" alt="">
+                <p class="text-secondary services-text">ضمانت 7 روزه</p>
+            </div>
+            <div class="col-sm-3 d-flex align-items-center flex-column">
+                <img src="assets/img/services/service 3.jpg" alt="">
+                <p class="text-secondary services-text">ضمانت اصالت کالا</p>
+            </div>
+            <div class="col-sm-3 d-flex align-items-center flex-column">
+                <img src="assets/img/services/service 4.jpg" alt="">
+                <p class="text-secondary services-text">تضمین بهترین قیمت</p>
+            </div>
+        </div>
+    </section>
+    <!-- end services -->
+    <!-- start footer -->
+    <footer class="container-fluid mt-5 footer">
+        <section class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-4 d-flex justify-content-center flex-column">
+                    <h5 class="text-white mt-5 mb-4">خدمات مشتریان</h5>
+                    <a href="" class="text-white footer-text mb-3"><i class="bi bi-dot"></i>سوالات متداول</a>
+                    <a href="" class="text-white footer-text mb-3"><i class="bi bi-dot"></i>احبار و مقالات</a>
+                    <a href="" class="text-white footer-text mb-3"><i class="bi bi-dot"></i>قوانین و مقررات</a>
+                </div>
+                <div class="col-sm-12 col-md-4 d-flex justify-content-center flex-column">
+                    <h5 class="text-white mt-5 mb-4">راهنمای بعد از خرید</h5>
+                    <a href="" class="text-white footer-text mb-3"><i class="bi bi-dot"></i>پیگیری سفارشات</a>
+                    <a href="" class="text-white footer-text mb-3"><i class="bi bi-dot"></i>شرایط مرجوع کالا</a>
+                    <a href="" class="text-white footer-text mb-5"><i class="bi bi-dot"></i>رویه بازگرداندن کالا</a>
+                </div>
+                <div class="col-sm-12 col-md-4 d-flex justify-content-center flex-column">
+                    <h5 class="text-white mt-5 mb-4">اطلاعات تماس</h5>
+                    <a href="tel:05155233222" class="text-white footer-text mb-3"><i class="bi bi-telephone footer-icon"></i>تلفن: 05155233222</a>
+                    <!-- <p class="text-white footer-text mb-3"><i class="bi bi-envelope-at footer-icon"></i>ایمیل: digiland@gmail.com</p> -->
+                    <p class="text-white footer-text mb-3"><i class="bi bi-clock footer-icon"></i>ساعات پاسخگویی: روز های کاری | 9 الی 24</p>
+                    <p class="text-white footer-text mb-5"><i class="bi bi-geo-alt footer-icon"></i>آدرس: خراسان رضوی - کاشمر - خیابان امام خمینی</p>
+                </div>
+            </div>
+        </section>
+    </footer>
+    <!-- end footer -->
+    <!-- start button to top -->
+    <a href="javascript:" id="scroll-to-top"><i class="bi bi-chevron-up"></i></a>
+    <!-- end button to top -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/jquery.countdownTimer.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
